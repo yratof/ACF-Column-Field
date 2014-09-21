@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Advanced Custom Fields: Column v1.1.1\n"
+"Project-Id-Version: Advanced Custom Fields: Column v1.0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: 2014-08-06 21:21:58+0000\n"
