@@ -6,20 +6,34 @@
 .field_type-columngroup.column-layout-1_3 {
 	width: 33.33333%;
 }
-
 .field_type-columngroup.column-layout-2_3 {
 	width: 66.66666%;
 }
-
 .field_type-columngroup.column-layout-1_2 {
 	width: 50%;
 }
-
 .field_type-columngroup.column-layout-1_4 {
 	width: 25%;
 }
 .field_type-columngroup.column-layout-3_4 {
 	width: 75%;
+}ld_type-columngroup.column-layout-1_5 {
+	width: 20%;
+}
+.field_type-columngroup.column-layout-2_5 {
+	width: 40%;
+}
+.field_type-columngroup.column-layout-3_5 {
+	width: 60%;
+}
+.field_type-columngroup.column-layout-4_5 {
+	width: 80%;
+}
+.field_type-columngroup.column-layout-1_6 {
+	width: 16.66666666%;
+}
+.field_type-columngroup.column-layout-1_8 {
+	width: 12.5%;
 }
 
 .field_type-columngroup .column-pad {
@@ -29,6 +43,9 @@
 .field_type-columngroup.column-layout-1_1 {
 	float: none;
 	clear: both;
+	height: 1px!important;
+	padding: 0!important;
+	border-top: none!important;
 }
 
 .field_type-columngroup.column-layout-1 .column-pad {
