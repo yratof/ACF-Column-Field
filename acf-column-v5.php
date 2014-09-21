@@ -96,12 +96,18 @@ class acf_field_column extends acf_field {
 			'name'			=> 'column-type',
 			'class'         => 'column-type-select',
 			'choices'       => array (
-				'1_1'			=> __('Reset','acf-column'),
-				'1_3'			=> __('One Third','acf-column'),
-				'2_3'			=> __('Two Thirds','acf-column'),
-				'1_2'			=> __('One Half','acf-column'),
-				'1_4'			=> __('One Quarter','acf-column'),
-				'3_4'			=> __('Three Quarters','acf-column'),
+				'1_1'		=> __('Reset','acf-column'),
+				'1_2'		=> __('One Half','acf-column'),
+				'1_3'		=> __('One Third','acf-column'),
+				'2_3'		=> __('Two Thirds','acf-column'),
+				'1_4'		=> __('One Quarter','acf-column'),
+				'3_4'		=> __('Three Quarters','acf-column'),
+				'1_5'		=> __('One Fifth','acf-column'),
+				'2_5'		=> __('Two Fifth','acf-column'),
+				'3_5'		=> __('Three Fifth','acf-column'),
+				'4_5'		=> __('Four Fifth','acf-column'),
+				'1_6'		=> __('One Sixth','acf-column'),
+				'1_8'		=> __('One Eighth','acf-column'),
 			)
 		));
 
