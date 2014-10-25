@@ -1,6 +1,16 @@
 .field_type-columngroup {
 	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+.acf-postbox.seamless > .inside > .acf-field.field_type-columngroup[class*="column-layout"] {
+	padding: 15px 0 15px 30px;
+}
+
+.acf-postbox.seamless > .inside > .acf-field.field_type-columngroup[class*="column-layout"].first {
+	padding: 15px 0;
 }
 
 .field_type-columngroup.column-layout-1_3 {
@@ -17,7 +27,8 @@
 }
 .field_type-columngroup.column-layout-3_4 {
 	width: 75%;
-}ld_type-columngroup.column-layout-1_5 {
+}
+.field_type-columngroup.column-layout-1_5 {
 	width: 20%;
 }
 .field_type-columngroup.column-layout-2_5 {
