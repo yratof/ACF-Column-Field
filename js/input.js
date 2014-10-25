@@ -17,7 +17,9 @@
 	*/
 	
 	acf.add_action('ready append', function( $el ){
-	 
+	 	
+		var count = 'first';
+		
 		// search $el for fields of type 'column'
 		acf.get_fields({ type : 'column'}, $el).each(function(e, postbox){
 			var columns = $(postbox).find('.acf-column').data('column'),
@@ -29,15 +31,16 @@
 					$(postbox).replaceWith('<div class="acf-field field_type-columngroup column-layout-' + columns + '"></div>')
 				} else {
 					if ( $(postbox).hasClass('hidden-by-tab') ) {
-						colClass = 'acf-field field_type-columngroup column-layout-' + columns + ' hidden-by-tab';
+						colClass = 'acf-field field_type-columngroup column-layout-' + columns + ' ' + count + ' hidden-by-tab';
 					} else {
-						colClass = 'acf-field field_type-columngroup column-layout-' + columns;
+						colClass = 'acf-field field_type-columngroup column-layout-' + columns + ' ' + count;
 					}
 					$(root)	.nextUntil('.field_type-column')
 							.removeClass('hidden-by-tab')
 							.wrapAll('<div class="' + colClass + '"><div class="column-pad"></div></div>');
 					$(postbox).remove();
 				}
+				count = '';
 			});
 		});
 	});
