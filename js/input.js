@@ -28,7 +28,8 @@
 			$(postbox).find('.acf-column').each(function() {
 				var root = $(this).parents('.field_type-column');
 				if ( columns == '1_1' ) {
-					$(postbox).replaceWith('<div class="acf-field field_type-columngroup column-layout-' + columns + '"></div>')
+					$(postbox).replaceWith('<div class="acf-field field_type-columngroup column-layout-' + columns + '"></div>');
+					count = 'first';
 				} else {
 					if ( $(postbox).hasClass('hidden-by-tab') ) {
 						colClass = 'acf-field field_type-columngroup column-layout-' + columns + ' ' + count + ' hidden-by-tab';
@@ -39,8 +40,8 @@
 							.removeClass('hidden-by-tab')
 							.wrapAll('<div class="' + colClass + '"><div class="column-pad"></div></div>');
 					$(postbox).remove();
+					count = '';
 				}
-				count = '';
 			});
 		});
 	});
