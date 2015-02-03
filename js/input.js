@@ -27,7 +27,7 @@
 
 			$(postbox).find('.acf-column').each(function() {
 				var root = $(this).parents('.field_type-column');
-				if ( columns == 'reset' ) {
+				if ( columns == '1_1' ) {
 					$(postbox).replaceWith('<div class="acf-field field_type-columngroup column-layout-' + columns + '"></div>');
 					count = 'first';
 				} else {
