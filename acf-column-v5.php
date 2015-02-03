@@ -96,7 +96,7 @@ class acf_field_column extends acf_field {
 			'name'			=> 'column-type',
 			'class'         => 'column-type-select',
 			'choices'       => array (
-				'reset'		=> __('Reset','acf-column'),
+				'1_1'		=> __('Reset','acf-column'),
 				'1_2'		=> __('One Half','acf-column'),
 				'1_3'		=> __('One Third','acf-column'),
 				'2_3'		=> __('Two Thirds','acf-column'),
