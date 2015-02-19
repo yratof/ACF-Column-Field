@@ -1,5 +1,5 @@
-ACF - Column Field Type
-=======================
+ACF - Column Field
+==================
 
 Because the original is not compatible with the new version I add support for ACF 5 and improved the CSS a litlle bit.
 
