@@ -18,7 +18,7 @@ will show this on page/post edit screen
 
 ### Compatibility
 
-This plugin needs the installation of ACF 5. There's a version included for ACF 5.2.6 and before and on version for AVF 5.2.7 and newer.
+This plugin needs the installation of ACF 5. There's a version included for ACF 5.2.6 and before and a version for ACF 5.2.7 and newer.
 
 ### Changelog
 **1.1.0**
