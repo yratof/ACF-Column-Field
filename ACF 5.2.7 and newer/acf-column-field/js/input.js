@@ -28,7 +28,7 @@
 			$(postbox).find('.acf-column').each(function() {
 				var root = $(this).parents('.acf-field-column');
 				if ( columns == '1_1' ) {
-					$(postbox).replaceWith('<div class="acf-field acf-field-columngroup column-layout-' + columns + '"></div>');
+					$(postbox).replaceWith('<div class="acf-field acf-field-columngroup column-end-layout"></div>');
 					count = 'first';
 				} else {
 					if ( $(postbox).hasClass('hidden-by-tab') ) {
