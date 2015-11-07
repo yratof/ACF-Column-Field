@@ -18,6 +18,11 @@
 	border-top-width: 0;
 }
 
+.acf-repeater .acf-row.-collapsed > .acf-fields > .acf-field.-collapsed-target {
+	display: block;
+	width: 100%;
+}
+
 .acf-field-columngroup.column-layout-1_3 {
 	width: 33.33333%;
 }
