@@ -23,7 +23,8 @@
 		// search $el for fields of type 'column'
 		acf.get_fields({ type : 'column'}, $el).each(function(e, postbox){
 			var columns = $(postbox).find('.acf-column').data('column'),
-				colClass = '';
+				colClass = '';,
+				is_collapse_field = '';
 
 			$(postbox).find('.acf-column').each(function() {
 				var root = $(this).parents('.acf-field-column');
@@ -31,6 +32,15 @@
 					$(postbox).replaceWith('<div class="acf-field acf-field-columngroup column-end-layout"></div>');
 					count = 'first';
 				} else {
+					var acf_fields = $(root).nextUntil('.acf-field-column');
+
+					acf_fields.each(function() {
+						if ( $(this).hasClass('-collapsed-target') ) {
+							is_collapse_field = ' -collapsed-target';
+							return is_collapse_field;
+						}
+					});
+					
 					if ( $(postbox).hasClass('hidden-by-tab') ) {
 						colClass = 'acf-field acf-field-columngroup column-layout-' + columns + ' ' + count + ' hidden-by-tab';
 					} else {
@@ -38,7 +48,7 @@
 					}
 					$(root)	.nextUntil('.acf-field-column')
 							.removeClass('hidden-by-tab')
-							.wrapAll('<div class="' + colClass + '"><div class="column-pad"></div></div>');
+							.wrapAll('<div class="' + colClass + is_collapse_field + '"></div>');
 					$(postbox).remove();
 					count = '';
 				}
