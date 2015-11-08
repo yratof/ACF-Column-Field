@@ -15,7 +15,7 @@
 
 .acf-fields > .acf-field[class*="column-layout"] {
 	clear: none;
-	border-top-width: 0;
+	border-top-width: 1px;
 }
 
 .acf-repeater .acf-row.-collapsed > .acf-fields > .acf-field.-collapsed-target {
