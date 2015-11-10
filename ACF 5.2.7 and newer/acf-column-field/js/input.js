@@ -23,7 +23,7 @@
 		// search $el for fields of type 'column'
 		acf.get_fields({ type : 'column'}, $el).each(function(e, postbox){
 			var columns = $(postbox).find('.acf-column').data('column'),
-				colClass = '';,
+				colClass = '',
 				is_collapse_field = '';
 
 			$(postbox).find('.acf-column').each(function() {
