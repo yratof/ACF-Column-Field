@@ -1,6 +1,4 @@
-(function($){
-	
-	
+(function($){	
 	/*
 	*  acf/setup_fields
 	*
@@ -21,9 +19,13 @@
 		var count = 'first';
 		
 		// search $el for fields of type 'column'
-		acf.get_fields({ type : 'column'}, $el).each(function(e, postbox){
+		acf.get_fields({ type : 'column'}, $el).each(function(e, postbox) {
+
 			var columns = $(postbox).find('.acf-column').data('column'),
+				orig_key = $(postbox).find('.acf-column').data('id'),
+				key = "acf-" + orig_key.replace("_", "-"),
 				colClass = '',
+				is_hidden = '',
 				is_collapse_field = '';
 
 			$(postbox).find('.acf-column').each(function() {
@@ -39,16 +41,20 @@
 							is_collapse_field = ' -collapsed-target';
 							return is_collapse_field;
 						}
+						if ( $(this).hasClass('hidden-by-conditional-logic') ) {
+							is_hidden = ' hidden-by-conditional-logic';
+							return is_hidden;
+						}
 					});
-					
+
 					if ( $(postbox).hasClass('hidden-by-tab') ) {
-						colClass = 'acf-field acf-field-columngroup column-layout-' + columns + ' ' + count + ' hidden-by-tab';
+						colClass = 'acf-field acf-field-columngroup ' + key + ' column-layout-' + columns + ' ' + count + ' hidden-by-tab';
 					} else {
-						colClass = 'acf-field acf-field-columngroup column-layout-' + columns + ' ' + count;
+						colClass = 'acf-field acf-field-columngroup ' + key + ' column-layout-' + columns + ' ' + count;
 					}
 					$(root)	.nextUntil('.acf-field-column')
 							.removeClass('hidden-by-tab')
-							.wrapAll('<div class="' + colClass + is_collapse_field + '"></div>');
+							.wrapAll('<div class="' + colClass + is_collapse_field + is_hidden + '" data-key="' + orig_key + '"></div>');
 					$(postbox).remove();
 					count = '';
 				}
