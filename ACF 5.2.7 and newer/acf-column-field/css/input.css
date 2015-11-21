@@ -23,6 +23,10 @@
 	width: 100%;
 }
 
+.acf-field-columngroup.conditional-hidden {
+	display: none;
+}
+
 .acf-field-columngroup.column-layout-1_3 {
 	width: 33.33333%;
 }
