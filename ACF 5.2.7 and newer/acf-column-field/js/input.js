@@ -66,6 +66,26 @@
 				}
 			});
 		});
+		
+		// Fix for initiating TinyMCE when using in Flexible Content Field
+		// Thanks to dsamson (https://github.com/dsamson/)
+
+		if (typeof tinyMCE !== 'undefined') {
+		  if ( tinyMCE ) {
+				acf.get_fields({ type : 'wysiwyg'}, $el).each(function(e, postbox){
+					$("textarea.wp-editor-area", postbox).each(function(){
+						edit = tinyMCE.EditorManager.get(this.id);
+						if ( edit !== null ) {
+							settings = edit.settings;
+							edit.remove();
+						} else {
+							settings = {};
+						};						
+						tinyMCE.EditorManager.init(settings);
+					});
+				});
+			}
+		}
 	});
 
 })(jQuery);
