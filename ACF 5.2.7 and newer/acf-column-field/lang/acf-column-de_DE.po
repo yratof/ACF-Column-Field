@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Advanced Custom Fields: Column v1.0.5\n"
+"Project-Id-Version: Advanced Custom Fields: Column v1.2.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-08-06 21:21:58+0000\n"
+"PO-Revision-Date: 2016-01-09 09:52:31+0000\n"
 "Last-Translator: thomas <t.meyer@me.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,46 +20,32 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes"
 
-#: acf-column-v4.php:23
 #: acf-column-v5.php:32
-#@ default
 #@ acf-column
 msgid "Column"
 msgstr "Spalten"
 
-#: acf-column-v4.php:24
-#@ acf
-msgid "Layout"
-msgstr ""
-
-#: acf-column-v4.php:79
 #: acf-column-v5.php:93
-#@ acf
 #@ acf-column
 msgid "Column Count"
 msgstr "Spaltenbreite"
-
-#: acf-column-v4.php:80
-#@ acf
-msgid "Two columns is advised; the ratio's need to sum up to one."
-msgstr "Die Summe aller Spalten sollte vor dem Zurücksetzen (Spalten beenden) nicht mehr als 1 ganze Spalte ergeben."
 
 #: acf-column-v5.php:99
 #@ acf-column
 msgid "Reset"
 msgstr "Spalten beenden"
 
-#: acf-column-v5.php:100
+#: acf-column-v5.php:101
 #@ acf-column
 msgid "One Third"
 msgstr "Ein Drittel"
 
-#: acf-column-v5.php:101
+#: acf-column-v5.php:102
 #@ acf-column
 msgid "Two Thirds"
 msgstr "Zwei Drittel"
 
-#: acf-column-v5.php:102
+#: acf-column-v5.php:100
 #@ acf-column
 msgid "One Half"
 msgstr "Halbe Breite"
@@ -78,4 +64,34 @@ msgstr "Drei Viertel"
 #@ acf-column
 msgid "At the end of the row add a column reset."
 msgstr "Zum Beenden der Reihe muss ein 'Spalten beenden' gesetzt werden."
+
+#: acf-column-v5.php:105
+#@ acf-column
+msgid "One Fifth"
+msgstr "Ein Fünftel"
+
+#: acf-column-v5.php:106
+#@ acf-column
+msgid "Two Fifth"
+msgstr "Zwei Fünftel"
+
+#: acf-column-v5.php:107
+#@ acf-column
+msgid "Three Fifth"
+msgstr "Drei Fünftel"
+
+#: acf-column-v5.php:108
+#@ acf-column
+msgid "Four Fifth"
+msgstr "Vier Fünftel"
+
+#: acf-column-v5.php:109
+#@ acf-column
+msgid "One Sixth"
+msgstr "Ein Sechstel"
+
+#: acf-column-v5.php:110
+#@ acf-column
+msgid "One Eighth"
+msgstr "Ein Achtel"
 

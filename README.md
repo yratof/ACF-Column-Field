@@ -21,6 +21,9 @@ will show this on page/post edit screen
 This plugin needs the installation of ACF 5. There's a version included for ACF 5.2.6 and before and a version for ACF 5.2.7 and newer.
 
 ### Changelog
+**1.2.6**
+* Some small CSS adjustments
+
 **1.2.5**
 * Fix for initiating TinyMCE when using in Flexible Content Field
 * Thanks to dsamson (https://github.com/dsamson/)
