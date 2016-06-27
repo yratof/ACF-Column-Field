@@ -1,0 +1,7 @@
+{
+    "name": "yratof/acf-columns",
+    "type": "wordpress-plugin",
+    "require": {
+        "composer/installers": "*"
+    }
+}
